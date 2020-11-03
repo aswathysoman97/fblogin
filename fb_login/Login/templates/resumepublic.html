@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% extends "homebase.html" %}
+
+{% block body_block %}
+
+<h3>Resumes</h3>
+<div class="container">
+    <table class="table table-striped">
+        <tr>
+            <td>PersonName</td>
+            <td>ID</td>
+            <td>action</td>
+        </tr>
+            {% for item in obj %}
+        <tr>
+            <td>{{item.fullname}}</td>
+            <td>{{item.id}}</td>
+            <td><a href="{%url 'resumedetails' item.id %}">view</a></td>
+        </tr>
+            {% endfor %}
+    </table>
+</div>
+{% endblock %}

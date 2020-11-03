@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% extends "homebase.html" %}
+
+{% block body_block %}
+{% load static %}
+<table>
+    <tr>
+<ul class="list-group list-group-flush">
+    <li class="tab">email : {{obj.email}}</li>
+    <li class=class="tab">name : {{obj.fullname}}</li>
+    <li class=class="tab">dob : {{obj.dob}}</li>
+    <li class=class="tab">qualification : {{obj.qualification}}</li>
+
+</ul>
+    </tr>
+
+    </table>
+</div>
+{% endblock %}

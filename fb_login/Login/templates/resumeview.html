@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+    {% block body_block %}
+{% load static %}
+<table>
+    <tr>
+<ul class="list-group list-group-flush">
+    <li class="list-group-item list-group-item-primary"><h3>RESUME</h3></li>
+    <li class="tab">email : {{user.email}}</li>
+    <li class="tab">name : {{user.fullname}}</li>
+    <li class="tab">dob : {{user.dob}}</li>
+    <li class="tab">qualification : {{user.qualification}}</li>
+
+</ul>
+    </tr>
+
+    </table>
+{% endblock %}

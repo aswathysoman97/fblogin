@@ -1,0 +1,21 @@
+<!-- templates/home.html -->
+
+{% extends 'base.html' %}
+{% block title %} Home {% endblock %}
+{% block content %}
+<div class="container">
+<div class="row">
+    <div class="col-sm-12 mb-3">
+        <h4 class="text-center"> Welcome {{ user.username }} </h4>
+        <div class="row">
+            <h3>CREATE YOUR RESUME</h3>
+            <h5>We'll never share your image with anyone else</h5>
+        </div>
+    </div>
+</div>
+<div class="col-3">
+    <a href="{%url 'createresume' %}">create</a>
+</div>
+</div>
+</div>
+{% endblock %}
